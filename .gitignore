@@ -3,3 +3,6 @@ pgweb
 bin
 tmp/
 cover.out
+*.snap
+/prime
+/snap

@@ -1,0 +1,18 @@
+name: pgweb-kemelzaidan
+version: git
+summary: Cross-platform client for PostgreSQL databases
+description: |
+  Pgweb is a web-based database browser for PostgreSQL, written in Go.
+
+grade: devel
+confinement: devmode
+
+parts:
+  pgweb:
+    source: .
+    plugin: go
+    go-importpath: github.com/kemelzaidan/pgweb
+
+apps:
+  pgweb:
+    command: pgweb
